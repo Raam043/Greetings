@@ -67,21 +67,21 @@ inputForm.addEventListener("submit", function (e) {
   if (totalHrs >= 5 && totalHrs <= 10) {
     
     greetCon.innerHTML = sayGoodMorning;
-    customBg("'images/morning.jpg'");
+    customBg("'morning.jpg'");
   } else if (totalHrs >= 11 && totalHrs <= 14) {
     
     greetCon.innerHTML = sayGoodNoon;
-    customBg("'images/noon.jpg'");
+    customBg("'noon.jpg'");
   } else if (totalHrs >= 15 && totalHrs <= 17) {
     
     greetCon.innerHTML = sayGoodAfterNoon;
-    customBg("'images/afternoon.jpg'");
+    customBg("'afternoon.jpg'");
   } else if (totalHrs >= 18 && totalHrs <= 21) {
    
     greetCon.innerHTML = sayGoodEvening;
-    customBg("'images/evening.jpg'");
+    customBg("'evening.jpg'");
   } else {
     greetCon.innerHTML = sayGoodNight;
-    customBg("'images/night.jpg'");
+    customBg("'night.jpg'");
   }
 });
