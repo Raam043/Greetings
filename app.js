@@ -65,19 +65,19 @@ inputForm.addEventListener("submit", function (e) {
   }
 
   if (totalHrs >= 5 && totalHrs <= 10) {
-    //ভোর ৫ টা হতে সকাল ১০ টা
+    
     greetCon.innerHTML = sayGoodMorning;
     customBg("'images/morning.jpg'");
   } else if (totalHrs >= 11 && totalHrs <= 14) {
-    // বেলা ১১ টা হতে দুপুর ২ টা
+    
     greetCon.innerHTML = sayGoodNoon;
     customBg("'images/noon.jpg'");
   } else if (totalHrs >= 15 && totalHrs <= 17) {
-    // দুপুর ৩ টা হতে বিকাল ৫ টা
+    
     greetCon.innerHTML = sayGoodAfterNoon;
     customBg("'images/afternoon.jpg'");
   } else if (totalHrs >= 18 && totalHrs <= 21) {
-    // সন্ধ্যা ৬ টা হতে রাত ১০ টা
+   
     greetCon.innerHTML = sayGoodEvening;
     customBg("'images/evening.jpg'");
   } else {
