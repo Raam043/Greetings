@@ -21,20 +21,20 @@ yum install git -y
 ```
 Make app directory and add Application files using git clone
 ```sh
-rm -rf /opt/ticketbooking/*
-mkdir /opt/ticketbooking
-cd /opt/ticketbooking
-git clone https://github.com/Raam043/Ticket_Booking.git
-cp /opt/ticketbooking/Ticket_Booking/* /opt/ticketbooking
+rm -rf /opt/Greetings/*
+mkdir /opt/Greetings
+cd /opt/Greetings
+git clone https://github.com/Raam043/Greetings.git
+cp /opt/Greetings/Greetings/* /opt/Greetings
 ```
 
 Build Docker images and Run container 
 ```sh
-docker stop ticketbooking
-docker rm -f ticketbooking
-docker image rm -f ticketbooking
-docker build -t ticketbooking .
-docker run --name ticketbooking -d -p 80:80 ticketbooking
+docker stop Greetings
+docker rm -f Greetings
+docker image rm -f Greetings
+docker build -t Greetings .
+docker run --name Greetings -d -p 80:80 Greetings
 ```
 Open New tab with `Server_Public_IP:`
 
