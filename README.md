@@ -21,22 +21,22 @@ yum install git -y
 ```
 Make app directory and add Application files using git clone
 ```sh
-rm -rf /opt/Greetings/*
-mkdir /opt/Greetings
-cd /opt/Greetings
+rm -rf /opt/greetings/*
+mkdir /opt/greetings
+cd /opt/greetings
 git clone https://github.com/Raam043/Greetings.git
-cp /opt/Greetings/Greetings/* /opt/Greetings
+cp /opt/greetings/Greetings/* /opt/greetings
 
 ```
 
 Build Docker images and Run container 
 ```sh
-docker stop Greetings
-docker rm -f Greetings
-docker image rm -f Greetings
-docker build -t Greetings .
-docker run --name Greetings -d -p 80:80 Greetings
-cp /opt/Greetings/* /usr/share/nginx/html
+docker stop greetings
+docker rm -f greetings
+docker image rm -f greetings
+docker build -t greetings .
+docker run --name greetings -d -p 80:80 greetings
+cp /opt/greetings/* /usr/share/nginx/html
 ```
 Open New tab with `Server_Public_IP:`
 
