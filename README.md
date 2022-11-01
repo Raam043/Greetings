@@ -36,7 +36,7 @@ docker rm -f greetings
 docker image rm -f greetings
 docker build -t greetings .
 docker run --name greetings -d -p 80:80 greetings
-cp /opt/greetings/* /usr/share/nginx/html
+docker cp /opt/greetings/* greetings:/usr/share/nginx/html
 ```
 Open New tab with `Server_Public_IP:`
 
