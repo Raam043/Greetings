@@ -26,6 +26,7 @@ mkdir /opt/Greetings
 cd /opt/Greetings
 git clone https://github.com/Raam043/Greetings.git
 cp /opt/Greetings/Greetings/* /opt/Greetings
+
 ```
 
 Build Docker images and Run container 
@@ -35,6 +36,7 @@ docker rm -f Greetings
 docker image rm -f Greetings
 docker build -t Greetings .
 docker run --name Greetings -d -p 80:80 Greetings
+cp /opt/Greetings/* /usr/share/nginx/html
 ```
 Open New tab with `Server_Public_IP:`
 
