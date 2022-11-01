@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background: linear-gradient(#00000050, #00000050), url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Current Time */
+#time {
+  font-size: 12.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Greetings Message */
+#greetings {
+  font-size: 3rem;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* Label */
+#mainForm label {
+  font-size: 3.125rem;
+  line-height: 2;
+}
+
+#mainForm {
+  width: 100%;
+  display: block;
+}
+
+/* Input Field */
+#userName {
+  border: 0px solid transparent;
+  border-bottom: 2px solid #fff !important;
+  background: transparent;
+  outline: 0px solid transparent;
+  color: #fff !important;
+  height: 5rem;
+  width: 90%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+::placeholder {
+  color: #ffffff80 !important;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Responsive Codes */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #mainForm label {
+    font-size: 1.125rem;
+  }
+  #time {
+    font-size: 4.5rem;
+  }
+  #greetings {
+    font-size: 1.5rem;
+  }
+  ::placeholder {
+    font-size: 1.2rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #mainForm label {
+    font-size: 2rem;
+  }
+  #time {
+    font-size: 7.5rem;
+  }
+  #greetings {
+    font-size: 1.5rem;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+}

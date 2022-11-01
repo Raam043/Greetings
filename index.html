@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Montserrat Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Greetings!</title>
+  </head>
+  <body>
+    <!-- Main Area -->
+    <div class="container">
+      <!-- Display Current Time -->
+      <h1 id="time">
+      </h1>
+      <!-- Greetings -->
+      <h2 id="greetings"></h2>
+      <!-- Get User Name -->
+      <div id="userInputForm">
+        <form method="POST" id="mainForm">
+          <label for="userName">Hey, What's your name?</label>
+          <br />
+          <input
+            autofocus
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="John Doe" required
+          />
+        </form>
+        <small>
+          <em>Write your name and hit "&#9166 Enter"</em>
+        </small>
+      </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
