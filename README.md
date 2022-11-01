@@ -1,20 +1,42 @@
-# Greetings
-This is a clone of Momentum theme from iMac google chrome browser homepage
+# `Greetings Web Application` Installation with docker and Jenkins.
 
-## Preview
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/preview.jpg"/>
+Release linux server and install Jenkins and Docker
 
-### Good Morning Version
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/gm-preview.jpg"/>
+```sh
+yum update -y
+yum install docker -y
+systemctl enable docker
+systemctl start docker
+yum install pip -y
+pip install docker-py
+wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+yum upgrade
+amazon-linux-extras install java-openjdk11 -y
+yum install jenkins -y
+systemctl enable jenkins
+systemctl start jenkins
+yum install git -y
+```
+Make app directory and add Application files using git clone
+```sh
+rm -rf /opt/ticketbooking/*
+mkdir /opt/ticketbooking
+cd /opt/ticketbooking
+git clone https://github.com/Raam043/Ticket_Booking.git
+cp /opt/ticketbooking/Ticket_Booking/* /opt/ticketbooking
+```
 
-### Good Noon Version
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/gb-preview.jpg"/>
+Build Docker images and Run container 
+```sh
+docker stop ticketbooking
+docker rm -f ticketbooking
+docker image rm -f ticketbooking
+docker build -t ticketbooking .
+docker run --name ticketbooking -d -p 80:80 ticketbooking
+```
+Open New tab with `Server_Public_IP:`
 
-### Good Afternoon Version
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/af-preview.jpg"/>
 
-### Good Evening Version
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/ev-preview.jpg"/>
 
-### Good Night Version
-<img src="https://raw.githubusercontent.com/Raam043/Greetings/main/gn-preview.jpg"/>
