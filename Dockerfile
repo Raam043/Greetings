@@ -8,3 +8,4 @@ COPY ./morning.jpg /usr/share/nginx/html
 COPY ./night.jpg /usr/share/nginx/html
 COPY ./noon.jpg /usr/share/nginx/html
 COPY ./style.css /usr/share/nginx/html
+COPY ./RN.jpg /usr/share/nginx/html
