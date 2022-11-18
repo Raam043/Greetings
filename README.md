@@ -47,9 +47,6 @@ With Above commands Jenkins CICD can be made
 
 Output :- 
 
-![image](https://user-images.githubusercontent.com/111989928/199234000-331f016b-7898-461f-8b39-dcd226c64061.png)
-
-
 
 ![image](https://user-images.githubusercontent.com/111989928/199224941-41b5ce65-4f97-40bc-a42b-9a67e3d2be35.png)
 
